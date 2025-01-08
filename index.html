@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/productsStyles.css"> 
+    <link rel="icon" type="image/x-icon" href="assets/img/elfLogo.png">
+    <title>Elf Market</title>
+</head>
+<body>
+    <header id = "searchContainer" class="page-header">
+        <a href="index.html">
+            <img src="assets/img/elfLogo.png" alt="Website Logo" id="siteLogo">
+        </a>
+        <h1>Products</h1>
+    </header>
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchButton">Search</button>
+        <select id="categoryDropdown"></select>
+        <select id="sortDropdown">
+            <option value="lowToHigh">Sort By Price: Low to High</option>
+            <option value="highToLow">Sort By Price: High to Low</option>
+        </select>
+        <button id="getAllProductsButton">Get All Products</button>
+    </div>
+
+    <div id="productsContainer"></div>
+    <script src="js/products.js" type="module"></script>
+</body>
+</html>

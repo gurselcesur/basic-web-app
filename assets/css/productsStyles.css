@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #9e64fa;
+    color: #333;
+}
+
+.page-header {
+    background-color: #7621ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7621ff;
+
+}
+
+#siteLogo {
+    margin-left: 10px;
+    height: 90px; 
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #7621ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #6818e9;
+}
+
+#categoryDropdown{
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sortDropdown {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#getAllProductsButton {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #7621ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#getAllProductsButton:hover {
+    background-color: #6818e9;
+}
+
+#productsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px; 
+    margin-top: 20px;
+    padding: 20px; 
+    justify-items: center;
+    background-color: #9e64fa;
+    border-radius: 10px; 
+}
+
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px; 
+    text-align: center;
+    width: 100%; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px #680ff8;
+}
+
+
+.product-card img {
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.product-card h3 {
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.product-card p {
+    font-size: 14px; 
+    color: #303030;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; 
+    margin-top: 10px;
+}
+
+.product-card .rating {
+    font-size: 14px;
+    color: rgb(98, 0, 255); 
+    margin-bottom: 10px;
+}
+
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.view-details-button {
+    display: block;
+    margin: 10px auto 0; 
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1024px) {
+    #productsContainer {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    #productsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #productsContainer {
+        grid-template-columns: 1fr;
+    }
+}
