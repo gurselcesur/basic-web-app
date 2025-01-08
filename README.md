@@ -2,8 +2,6 @@
 
 - This project is a web-based application designed to showcase and manage a collection of products. Users can search, sort, and filter products by categories, view product details, and interact with product data dynamically.
 
-- This project was developed as a part of an assignment by Gürsel Cesur.
-
 ## Table of Contents
 1. Features
 2. Technologies Used
